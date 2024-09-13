@@ -1,0 +1,16 @@
+{
+    "name": "rqmyy/chakao",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Rqmyy\\Chakao\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nusji",
+            "email": "anasnant.work@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  display: block;
+  place-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../img/bgn.webp)
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-top: 10px;
+  width: 150px;
+  /* ปรับขนาดโลโก้ตามที่คุณต้องการ */
+  height: auto;
+  /* ทำให้รูปภาพปรับขนาดอัตโนมัติ */
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.headtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.bt-newmem {
+  margin-top: 10px;
+}
+/* สไตล์ปุ่มและเมนูดรอปดาวน์ */
+.page-menu {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-button {
+  margin-top: 10px;
+  padding: 5px 20px;
+  background-color: #00796B;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#dropdown-button:hover {
+  background-color: #81C784;
+}
+
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #00796B;
+  border-radius: 5px;
+}
+
+#dropdown-menu li {
+  margin: 0;
+}
+
+#dropdown-menu a {
+  display: block;
+  text-decoration: none;
+  color: #00796B;
+  padding: 10px 20px;
+}
+
+#dropdown-menu a:hover {
+  background-color: #81C784;
+  color: #fff;
+}
+
+.page-menu.active #dropdown-menu {
+  display: block;
+}

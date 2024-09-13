@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <script>
+    Swal.fire({
+      title: "สมัครสมาชิกสำเร็จ!",
+      text: "ยินดีต้อนรับสมาชิกใหม่ สิทธิพิเศษรออยู่",
+      icon: "success",
+      showConfirmButton: true,
+      confirmButtonText: "เข้าสู่ระบบ",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // เด้งไปยังหน้าเข้าสู่ระบบเมื่อกด OK
+        window.location.href = "login.php";
+      }
+    });
+  </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
